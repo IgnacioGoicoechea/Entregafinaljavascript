@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+/* font-family: 'IBM Plex Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    padding: 0 0 0 50px;
+}
+.menu{
+    color:black;
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    align-items: flex-end;
+}
+.menu li {
+    padding: 15px;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+ main{
+    margin: 15px;
+    display: flex;
+}
+.carrito{
+    width: 40px;
+}
+.ancho-min{
+    display: flex;  
+    flex-wrap: wrap; 
+    height: 80vh;
+}
+.contenedor{
+    
+    margin: 7.5px;
+    height: 345px;
+    width: 190px;
+    border-radius: 1%;
+    padding: 0 5px 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+.contenedor:hover{
+        margin-top: -10px;
+        .nombre-producto{
+            font-weight: bold;
+        }       
+}
+.contenedor img{
+    width: 180px;
+   
+   
+}  
+  .contenedor .capa {
+    height: 0;
+    opacity: 0;  
+    transition: 0.5;  
+}
+  .contenedor:hover .capa {
+    opacity: 1;
+    position: relative;   
+    top: -180px;
+    transition: .5s;
+  }
+.nombre-producto{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: small;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.precio{
+    color: rgb(46, 196, 0);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.espacio-boton{
+    height: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.boton{
+    background-color: rgb(76, 31, 255);
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
+    border-start-start-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.banner{
+    width: 100%;
+}
