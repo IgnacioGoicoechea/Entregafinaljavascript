@@ -100,16 +100,98 @@
     flex-direction: column-reverse;
 }
 .boton{
+    background-color: rgb(53, 66, 235);
+    border-radius: 2px solid rgb(53, 66, 235);
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
+   border-radius: 1rem;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 66, 235);
+}
+.banner{
+    width: 100%;
+}
+
+
+/* carrito de compras */
+.venta{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+}
+.alojamiento-de-productos{
+    margin: 10px;
+    
+}
+.imagen-carrito{
+    height: 160px;
+    border-radius: 1rem;
+    padding: 8px;
+}
+.totales{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+.totales h2{
+    font-size: 50px;
+}
+.carrito-producto-nombre{
+    width: 30%;
+}
+.detalle{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+.carrito-acciones-subtotal,
+.carrito-acciones-envio,
+.carrito-acciones-total{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Subtotal{
+    font-weight: bold;
+    padding: 10px;
+}
+.total{
+    padding: 10px;
+}
+.carrito-producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(75, 75, 219, 0.263);
+    border-radius: 1rem;
+    margin: 5px;
+}
+.boton-carrito{
     background-color: rgb(76, 31, 255);
     height: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', sans-serif;
     font-size: large;
-    border-start-start-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    height: 10vh;
+    border-radius: 1rem;
+   
 }
-.banner{
-    width: 100%;
+.boton-carrito:hover{
+    background-color: aliceblue;
+    color: rgb(76, 31, 255);
+}
+.boton-comprar{
+    margin: 10px;
 }

@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="encabezado">
-        <img class="logo" src="./imagenes/logo.png" alt="logo">
-        <ul class="menu">
-            <li><a href="./index.html">Productos</a></li>
-            <li><a href="./carrito.html">Carrito</a><img class="carrito" src="./imagenes/carrito.png" alt="carrito"></li>
-        </ul>
-    
+        <img class="logo" src="./imagenes/logo.png" href="./index.html" alt="logo">
+        <nav>
+            <ul class="menu menu-encarrito">
+                <li><a href="./index.html">Productos</a></li>
+                <li><a href="./carrito.html">Carrito</a><img class="carrito" src="./imagenes/carrito.png" alt="carrito">
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main class="venta">
+        <div class="alojamiento-de-productos">
+            <div class=carrito-producto>
+                <img class="imagen-carrito" src="./imagenes/asus/rog 20090/woo/200901.jpg" alt="notebook">
+                <div class="carrito-producto-nombre">
+                    <small>Nombre</small>
+                    <h3> Asus Rog Zephyrus GA402RJ Amd RYZEN™ 9</h3>
+                </div>
+                <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                    <h3>1</h3>
+                </div>
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <h3>$14000</h3>
+                </div>
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <h3>$14000</h3>
+                </div>
+                <button class="boton-carrito carrito-producto-eliminar">
+                    <i class="bi bi-trash3-fill"></i>
+                </button>
+
+            </div>
+            <div class=carrito-producto>
+                <img class="imagen-carrito" src="./imagenes/asus/rog 20090/woo/200901.jpg" alt="notebook">
+                <div class="carrito-producto-nombre">
+                    <small>Nombre</small>
+                    <h3> Asus Rog Zephyrus GA402RJ Amd RYZEN™ 9</h3>
+                </div>
+                <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                    <h3>1</h3>
+                </div>
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <h3>$14000</h3>
+                </div>
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <h3>$14000</h3>
+                </div>
+                <button class="boton-carrito carrito-producto-eliminar">
+                    <i class="bi bi-trash3-fill"></i>
+                </button>
+
+            </div>
+        </div>
+        <div class="totales">
+            <h2>Detalles</h2>
+            <HR>
+            </HR>
+            <div class="detalle">
+
+                <div class="carrito-acciones-subtotal">
+                    <p class="Subtotal">SUBTOTAL:</p>
+                    <p class="total">$400000</p>
+                </div>
+                <hr>
+                <div class="carrito-acciones-envio">
+                    <p class="Subtotal">ENVIO</p>
+                    <p class="total">$3000</p>
+                </div>
+                <hr>
+                <div class="carrito-acciones-total">
+                    <h2 class="total">TOTAL</h2>
+                    <h3 class="total" id="total">$50000</h3>
+                </div>
+            </div>
+            <button class="boton boton-comprar carrito-acciones-comprar">Finalizar compra</button>
+        </div>
+    </main>
 </body>
+
 </html>
